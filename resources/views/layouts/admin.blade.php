@@ -25,9 +25,9 @@
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row default-layout-navbar">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                <a class="navbar-brand brand-logo" href="https://www.youtube.com/channel/UCMWSlUcDJS00-5pmicciZ_w"><img src="{{asset('melody/images/logo.svg')}}"
+                <a class="navbar-brand brand-logo" href="{{route('home')}}"><img src="{{asset('melody/images/logo/logo-two.jfif')}}"
                         alt="logo" /></a>
-                <a class="navbar-brand brand-logo-mini" href="index-2.html"><img src="{{asset('melody/images/logo-mini.svg')}}"
+                <a class="navbar-brand brand-logo-mini" href="index-2.html"><img src="{{asset('melody/images/logo/logo-one.jfif')}}"
                         alt="logo" /></a>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-stretch">
@@ -52,7 +52,7 @@
                     @yield('create')
                     <li class="nav-item nav-profile dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-                            <img src="{{asset('melody/images/faces/face16.jpg')}}" alt="profile" />
+                            <img src="{{asset('melody/images/logo/logo-three.jfif')}}" alt="profile" />
                         </a>
                         <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
                             aria-labelledby="profileDropdown">
@@ -119,7 +119,7 @@
                     <div class="d-sm-flex justify-content-center justify-content-sm-between">
                         <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2021.
                             Todos los derechos reservados.</span>
-                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"><a href="https://www.youtube.com/channel/UCMWSlUcDJS00-5pmicciZ_w">Texvn Online</a> </> <i class="far fa-heart text-danger"></i></span>
+                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"><a href="{{route('home')}}">NetPet</a> </> <i class="far fa-heart text-danger"></i></span>
                     </div>
                 </footer>
                 <!-- partial -->
